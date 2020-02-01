@@ -26,13 +26,15 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Todo list</h1>
-      <label> Name: </label>
-      <input className={!utils.validateName(name) && 'error'} value={name} onChange={e => setName(e.target.value)} />
-      <label> Priority: </label>
-      <input className={!utils.validatePriority(name) && 'error'}  value={priority} onChange={e => setPriority(e.target.value)} />
-      <button className="add" onClick={handleOnAddClick}>Add</button>
-      <button className="sort" onClick={handleOnSortClick}>SortList</button>
+      <div className="header">
+        <h1>Todo list</h1>
+        <label> Name: </label>
+        <input className={!utils.validateName(name) && 'error'} value={name} onChange={e => setName(e.target.value)} />
+        <label> Priority: </label>
+        <input className={!utils.validatePriority(name) && 'error'} value={priority} onChange={e => setPriority(e.target.value)} />
+        <button className="add" onClick={handleOnAddClick}>Add</button>
+        <button className="sort" onClick={handleOnSortClick}>SortList</button>
+      </div>
       <table>
         <thead>
           <tr>

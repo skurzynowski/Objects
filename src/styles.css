@@ -14,9 +14,11 @@ button.add{
   background-color: green;
   color: white;
   font-size: 1.7rem;
-  display: block;
   margin: 1rem auto;
-  width: 20rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 button.delete{
@@ -29,6 +31,9 @@ button.delete{
 
 table{
   margin: 3rem auto;
+  padding: 0.75rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
 }
 
 tr{
@@ -43,4 +48,8 @@ tbody{
 .error{
   border-color: red;
   color: red;
+}
+
+.header{
+  border: 1px solid black;
 }
